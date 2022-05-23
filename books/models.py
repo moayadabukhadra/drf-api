@@ -7,7 +7,7 @@ class Book(models.Model):
     description = models.TextField(max_length=500)
     author = models.CharField(max_length=64)
     publish_Date = models.DateField(null=True)
-    reviewer = models.ForeignKey(get_user_model(), on_delete= models.CASCADE)
+
 
 
     def __str__(self):
